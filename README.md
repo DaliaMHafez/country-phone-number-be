@@ -1,5 +1,6 @@
 ## to start the application, plz run:
 1- mvn clean install
+2- mvn spring-boot:run
 
 ## to start the application usinf Docker, plz run:
 1- docker-compose up
