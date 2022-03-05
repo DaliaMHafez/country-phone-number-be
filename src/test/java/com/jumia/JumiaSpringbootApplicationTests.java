@@ -55,11 +55,12 @@ class JumiaSpringbootApplicationTests extends AbstractTest{
 	   int status = mvcResult.getResponse().getStatus();
 	   assertEquals(200, status);
 	}
-	@Test
-	public void deleteCustomer() throws Exception {
-	   String uri = "/api/customers/1";
-	   MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.delete(uri)).andReturn();
-	   int status = mvcResult.getResponse().getStatus();
-	   assertEquals(200, status);
-	}
+	// commented because it actualy delets data
+	// @Test
+	// public void deleteCustomer() throws Exception {
+	//    String uri = "/api/customers/1";
+	//    MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.delete(uri)).andReturn();
+	//    int status = mvcResult.getResponse().getStatus();
+	//    assertEquals(200, status);
+	// }
 }
