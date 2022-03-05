@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  sqlite-standalone:
+    image: keinos/sqlite3:latest
+    container_name: sqlite-standalone
+      # - url= jdbc:sqlite:sample.db
+  springboot-docker-container:
+    image: springboot-docker-container
+    container_name: springboot-docker-container13
+    ports:
+      - 8080:8080
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - sqlite-standalone

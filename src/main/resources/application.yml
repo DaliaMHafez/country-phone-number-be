@@ -1,0 +1,25 @@
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+spring:
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:sample.db
+    # url: jdbc:sqlite:sqlite-standalone
+    username:
+    password:
+
+  jpa:
+    database-platform: com.jumia.repository.SQLDialect
+    hibernate:
+      ddl-auto: update
+
+
+
+ 
+ 
+
+    
